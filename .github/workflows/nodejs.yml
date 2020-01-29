@@ -33,5 +33,5 @@ jobs:
     #- name: 删除冗余文件
       #run: ossutil rm oss://blog-react-admin/dist -rf
     - name: 复制文件到阿里云OSS
-      run: ossutil cp -rf build oss://react-blog/
+      run: ossutil cp -rf build oss://f6-ming/react-blog/
 
