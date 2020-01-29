@@ -27,11 +27,11 @@ jobs:
     - name: setup aliyun oss
       uses: manyuanrong/setup-ossutil@master
       with:
-        endpoint: oss-cn-hangzhou.aliyuncs.com
+        endpoint: oss-cn-beijing.aliyuncs.com
         access-key-id: ${{ secrets.OSS_KEY_ID }}
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
     #- name: 删除冗余文件
-      #run: ossutil rm oss://blog-react-admin/dist -rf
+      #run: ossutil rm  oss://f6-ming/react-blog/build -rf
     - name: 复制文件到阿里云OSS
       run: ossutil cp -rf build oss://f6-ming/react-blog/
 
