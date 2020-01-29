@@ -8,13 +8,13 @@ import MyInfo from '@/views/web/about/MyInfo'
 export const API_BASE_URL = 'http://127.0.0.1:6060'
 
 // project config
-export const HEADER_BLOG_NAME = '郭大大的博客' // header title 显示的名字
+export const HEADER_BLOG_NAME = '小明的博客' // header title 显示的名字
 
 // === sidebar
 export const SIDEBAR = {
   avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
-  title: '郭大大', // 标题
-  subTitle: '前端打杂人员，略微代码洁癖', // 子标题
+  title: '小明', // 标题
+  subTitle: '前端专业搬砖', // 子标题
   // 个人主页
   homepages: {
     github: {
