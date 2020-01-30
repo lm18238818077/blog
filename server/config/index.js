@@ -34,9 +34,9 @@ const config = {
   DATABASE: {
     database: 'test',
     user: 'root',
-    password: 'qxzx13935573897',
+    password: '123456',
     options: {
-      host: 'localhost', // 连接的 host 地址
+      host: '127.0.0.1', // 连接的 host 地址
       dialect: 'mysql', // 连接到 mysql
       pool: {
         max: 5,
