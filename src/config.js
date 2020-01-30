@@ -5,7 +5,7 @@ import SvgIcon from '@/components/SvgIcon'
 import MyInfo from '@/views/web/about/MyInfo'
 
 // API_BASE_URL
-export const API_BASE_URL = 'http://47.104.192.184/:6060/'
+export const API_BASE_URL = 'http://47.104.192.184:6060/'
 
 // project config
 export const HEADER_BLOG_NAME = '小明的博客' // header title 显示的名字
