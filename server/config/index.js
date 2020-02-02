@@ -60,9 +60,9 @@ if (!devMode) {
   // ==== 配置数据库
   config.DATABASE = {
     ...config.DATABASE,
-    database: '', // 数据库名
-    user: '', // 账号
-    password: '' // 密码
+    database: 'test', // 数据库名
+    user: 'root', // 账号
+    password: 'lm123456' // 密码
   }
 
   // 配置 github 授权
@@ -70,7 +70,7 @@ if (!devMode) {
   config.GITHUB.client_secret = ''
 
   // ==== 配置 token 密钥
-  config.TOKEN.secret = ''
+  config.TOKEN.secret = 'ming'
 
   // ==== 配置邮箱
 
