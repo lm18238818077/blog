@@ -8,11 +8,11 @@ import SvgIcon from '@/components/SvgIcon'
 const skills = [
   {
     label: 'HTML、CSS、Javascript：能熟练开发符合 W3C 标准的页面！',
-    rate: 3
+    rate: 4
   },
   {
     label: 'react vue 框架：熟练掌握使用！',
-    rate: 3
+    rate: 4
   },
   {
     label: ' es6：日常开发必备，以及掌握基本面向对象编程实现！！',
@@ -34,28 +34,28 @@ const MyInfo = () => {
       <Divider orientation='left'>博客简述</Divider>
       <p>本博客使用的技术为 react hooks + antd + koa2 + mysql</p>
       <p>
-        源码地址为 <Href href='https://github.com/gershonv/react-blog'>github</Href>
+        源码地址为 <Href href='https://github.com/lm18238818077/blog'>github</Href>
         ，仅供参考，不做商业用途！
       </p>
 
       <Divider orientation='left'>关于我</Divider>
 
       <ul className='about-list'>
-        <li>姓名：郭少威</li>
+        <li>姓名：李明</li>
         <li>学历专业：本科 软件工程</li>
         <li>
           联系方式：
-          <Icon type='qq' /> 434358603
+          <Icon type='qq' /> 254017072
           <Divider type='vertical' />
           <SvgIcon type='iconemail' style={{ marginRight: 5, transform: 'translateY(2px)' }} />
-          <a href='mailto:gershonv@163.com'>gershonv@163.com</a>
+          <a href='mailto:gershonv@163.com'>18003554931@163.com</a>
         </li>
-        <li>坐标：广州市</li>
+        <li>坐标：杭州市</li>
         <li>
-          其他博客地址：
+          {/* 其他博客地址：
           <Href href='https://gershonv.github.io/'>hexo 博客</Href>
           <Divider type='vertical' />
-          <Href href='https://juejin.im/user/5acac6c4f265da2378408f92'>掘金主页</Href>
+          <Href href='https://juejin.im/user/5acac6c4f265da2378408f92'>掘金主页</Href> */}
         </li>
         <li>
           技能
@@ -72,7 +72,7 @@ const MyInfo = () => {
           其他
           <ul>
             <li>常用开发工具： vscode、webstorm、git</li>
-            <li>熟悉的 UI 工具： antd、element-ui、vux</li>
+            <li>熟悉的 UI 工具： antd、element-ui</li>
             <li>良好的代码习惯： 略微代码洁癖、注释规范 jsdoc</li>
           </ul>
         </li>

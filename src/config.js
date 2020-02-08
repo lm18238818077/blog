@@ -18,11 +18,11 @@ export const SIDEBAR = {
   // 个人主页
   homepages: {
     github: {
-      link: 'https://github.com/gershonv',
+      link: 'https://github.com/lm18238818077/blog',
       icon: <Icon type='github' theme='filled' className='homepage-icon' />
     },
     juejin: {
-      link: 'https://juejin.im/user/5acac6c4f265da2378408f92',
+      link: 'https://juejin.im/user/5c6522c96fb9a049a97a3766',
       icon: <SvgIcon type='iconjuejin' className='homepage-icon' />
     }
   }
@@ -36,7 +36,7 @@ export const DISCUSS_AVATAR = SIDEBAR.avatar // 评论框博主头像
  */
 export const GITHUB = {
   enable: true, // github 第三方授权开关
-  client_id: 'c6a96a84105bb0be1fe5', // Setting > Developer setting > OAuth applications => client_id
+  client_id: 'ef5dcc92c5754a20dd86', // Setting > Developer setting > OAuth applications => client_id
   url: 'https://github.com/login/oauth/authorize' // 跳转的登录的地址
 }
 

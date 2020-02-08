@@ -2,10 +2,10 @@ const devMode = process.env.NODE_ENV === 'development'
 
 const config = {
   PORT: 6060, // 启动端口
-  ADMIN_GITHUB_LOGIN_NAME: 'gershonv', // 博主的 github 登录的账户名 user
+  ADMIN_GITHUB_LOGIN_NAME: 'lm18238818077', // 博主的 github 登录的账户名 user
   GITHUB: {
-    client_id: 'c6a96a84105bb0be1fe5',
-    client_secret: '463f3994ab5687544b2cddbb6cf44920bf179ad9',
+    client_id: 'ef5dcc92c5754a20dd86',
+    client_secret: '965bb67a10531bc1636bbe4947e6a1ada4b57f7d',
     access_token_url: 'https://github.com/login/oauth/access_token',
     fetch_user_url: 'https://api.github.com/user', // 用于 oauth2
     fetch_user: 'https://api.github.com/users/' // fetch user url https://api.github.com/users/gershonv
@@ -23,7 +23,7 @@ const config = {
         pass: '123456' // generated ethereal password 授权码 而非 密码
       }
     },
-    subject: '郭大大的博客 - 您的评论获得新的回复！', // 主题
+    subject: '小明的博客 - 您的评论获得新的回复！', // 主题
     text: '您的评论获得新的回复！',
     WEB_HOST: 'http://127.0.0.1:3000' // email callback url
   },
@@ -66,15 +66,15 @@ if (!devMode) {
   }
 
   // 配置 github 授权
-  config.GITHUB.client_id = ''
-  config.GITHUB.client_secret = ''
+  config.GITHUB.client_id = 'ef5dcc92c5754a20dd86'
+  config.GITHUB.client_secret = '965bb67a10531bc1636bbe4947e6a1ada4b57f7d'
 
   // ==== 配置 token 密钥
   config.TOKEN.secret = 'ming'
 
   // ==== 配置邮箱
 
-  // config.EMAIL_NOTICE.enable = true
+  config.EMAIL_NOTICE.enable = false
   config.EMAIL_NOTICE.transporterConfig.auth = {
     user: 'guodadablog@163.com', // generated ethereal user
     pass: '123456XXX' // generated ethereal password 授权码 而非 密码

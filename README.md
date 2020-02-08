@@ -7,8 +7,7 @@
 - 具备了代码高亮、权限管理、第三方 `github` 登录、评论与通知、以及邮件通知功能的个人博客...
 - 具备文件导入导出功能，假如你之前用 `hexo` 博客, 那么你可以直接通过导入 `md` 文件迁移你的文章。
 
-* 我的博客地址: [郭大大的博客](https://guodada.fun)
-* 测试博客地址: [测试使用的郭大大的博客](http://test.guodada.fun) `admin/admin` 为博主账号 小伙伴可以使用看看博客的完整功能！
+* 我的博客地址: [小明的博客](http://47.104.192.184/)
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
@@ -43,11 +42,11 @@
 
 ### pc 端
 
-![](https://user-gold-cdn.xitu.io/2019/10/14/16dc944b4cdc4409?w=1908&h=1056&f=png&s=385734)
+![](https://f6-ming.oss-cn-beijing.aliyuncs.com/image/d2d9e4fe594991f6dab323d8a110164.png)
 
 ### 移动端
 
-![](https://user-gold-cdn.xitu.io/2019/9/20/16d4df6fb00c0abf?w=370&h=789&f=png&s=144230)
+![](https://f6-ming.oss-cn-beijing.aliyuncs.com/image/d2d9e4fe594991f6dab323d8a110164.png)
 
 ## 项目结构
 
@@ -167,17 +166,17 @@ import MyInfo from '@/views/web/about/MyInfo'
 export const API_BASE_URL = 'http://127.0.0.1:6060'
 
 // project config
-export const HEADER_BLOG_NAME = '郭大大的博客' // header title 显示的名字
+export const HEADER_BLOG_NAME = '小明的博客' // header title 显示的名字
 
 // === sidebar
 export const SIDEBAR = {
   avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
-  title: '郭大大', // 标题
+  title: '小明', // 标题
   subTitle: '前端打杂人员，略微代码洁癖', // 子标题
   // 个人主页
   homepages: {
-    github: 'https://github.com/gershonv',
-    juejin: 'https://juejin.im/user/5acac6c4f265da2378408f92'
+    github: 'https://github.com/lm18238818077/blog',
+    juejin: 'https://juejin.im/user/5c6522c96fb9a049a97a3766'
   }
 }
 
@@ -227,7 +226,7 @@ const config = {
         pass: '123456' // generated ethereal password 授权码 而非 密码
       }
     },
-    subject: '郭大大的博客 - 您的评论获得新的回复！', // 主题
+    subject: '小明的博客 - 您的评论获得新的回复！', // 主题
     text: '您的评论获得新的回复！',
     WEB_HOST: 'http://127.0.0.1:3000' // email callback url
   },
@@ -298,7 +297,7 @@ module.exports = config
 ## 使用这个项目
 
 ```bash
-git clone https://github.com/gershonv/react-blog.git
+git clone https://github.com/lm18238818077/blog.git
 
 ## 安装依赖以及开启开发模式
 cd react-blog
