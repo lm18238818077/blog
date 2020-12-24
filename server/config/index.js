@@ -35,7 +35,6 @@ const config = {
     database: 'test',
     user: 'root',
     password: '123456',
-    port: 3307,
     options: {
       host: '127.0.0.1', // 连接的 host 地址
       dialect: 'mysql', // 连接到 mysql
@@ -62,9 +61,12 @@ if (!devMode) {
   config.DATABASE = {
     ...config.DATABASE,
     database: 'test', // 数据库名
-    user: 'root', // 账号
-    port: 3307,
-    password: '123456' // 密码
+    user: 'root', // dd
+    password: '123456', //
+    options: {
+      ...config.DATABASE.options,
+      host: 'mysql',
+    }
   }
 
   // 配置 github 授权

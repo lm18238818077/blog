@@ -5,12 +5,11 @@
 FROM node:12.12.0
 RUN mkdir -p /home/www/express
 WORKDIR /home/www/express
-COPY /server /home/www/express
-RUN rm -fr /home/www/express/node_modules/*
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install
+COPY ./server /home/www/express/
+RUN npm install -g yarn
+RUN yarn
 ENTRYPOINT ["npm", "run"]
-CMD ["dev"]
+CMD ["start"]
 
 
 # FROM mysql:5.7.24

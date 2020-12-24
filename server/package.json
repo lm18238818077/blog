@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon app.js",
-    "start": "cross-env nodemon app.js"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "archiver": "^3.1.1",
