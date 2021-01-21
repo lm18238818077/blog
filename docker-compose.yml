@@ -2,12 +2,15 @@ version: '3'
 
 services:
   nodejs:
-    image: myblog-api:3.3
+    image: myblog-api:2.4
     container_name: nodejs
     build: 
-      context: ./
+      context: .  # 相对当前 docker-compose.yml 文件所在目录
       dockerfile: ./server/docker/Dockerfile
-    restart: unless-stopped
+    restart: unless-stopped   #no：默认的重启策略，在任何情况下都不会重启容器；
+                              #on-failure：容器非正常退出时，比如退出状态为非0(异常退出)，才会重启容器；
+                              #always：容器总是重新启动，即使容器被手动停止了，当 Docker 重启时容器也还是会一起启动；
+                              #unless-stopped：容器总是重新启动，除非容器被停止（手动或其他方式），那么 Docker 重启时容器则不会启动。
     ports:
       - "6060:6060"
       - "2208:22"
@@ -18,8 +21,11 @@ services:
       - app-network
       
   webserver:
-    image: myblog:2.3
+    image: myblog:2.4
     container_name: webserver
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile
     restart: unless-stopped
     ports:
       - "8080:80"
@@ -29,11 +35,8 @@ services:
       - app-network
   
   mysql:
-    image: mysql-sql:1.3
+    image: mysql:5.7
     container_name: mysql
-    build: 
-      context: ./
-      dockerfile: ./server/mysql/Dockerfile
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=123456
@@ -43,9 +46,17 @@ services:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     ports:
       - "3307:3306"
+    volumes:
+      - F:/myspace/blog/blog/server/mysql/my.cnf:/etc/mysql/my.cnf
+      - db_data:/var/lib/mysql
+
     networks:
       - app-network
+volumes:
+  db_data:
+
 
 networks:
-  app-network:
-    driver: bridge
+  app-network:  # 一个具体网络的条目名称
+    #name: nginx-net # 网络名称，默认为"工程名称_网络条目名称"
+    driver: bridge # 网络模式，默认为 bridge

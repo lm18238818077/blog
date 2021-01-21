@@ -5,7 +5,7 @@
 FROM node:12.12.0
 RUN mkdir -p /home/www/express
 WORKDIR /home/www/express
-COPY ./server /home/www/express/
+COPY server /home/www/express/
 RUN npm install -g yarn
 RUN yarn
 ENTRYPOINT ["npm", "run"]
