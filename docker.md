@@ -62,7 +62,8 @@ docker run 镜像名称
  docker exec -it 容器id /bin/bash 进入正在运行的容器     开启一个新进程
  docker attach 容器id   进入正在运行的终端，不开启新的进程
 
-docker cp 59a63d8650f7:/home/index.js /home
+docker cp 6f411e633ba4:/etc/nginx/conf.d/default.conf G:/docker/nginx
+
 将容器内的文件拷贝到宿主机上
   
 ```

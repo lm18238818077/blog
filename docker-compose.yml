@@ -4,9 +4,9 @@ services:
   nodejs:
     image: myblog-api:2.4
     container_name: nodejs
-    build: 
-      context: .  # 相对当前 docker-compose.yml 文件所在目录
-      dockerfile: ./server/docker/Dockerfile
+    # build: 
+    #   context: .  # 相对当前 docker-compose.yml 文件所在目录
+    #   dockerfile: ./server/docker/Dockerfile
     restart: unless-stopped   #no：默认的重启策略，在任何情况下都不会重启容器；
                               #on-failure：容器非正常退出时，比如退出状态为非0(异常退出)，才会重启容器；
                               #always：容器总是重新启动，即使容器被手动停止了，当 Docker 重启时容器也还是会一起启动；
@@ -14,6 +14,7 @@ services:
     ports:
       - "6060:6060"
       - "2208:22"
+    command: start
     environment:
       NODE_ENV: production  #development
     
