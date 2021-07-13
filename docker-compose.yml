@@ -2,7 +2,7 @@ version: '3'
 
 services:
   nodejs:
-    image: myblog-api:2.4
+    image: lm18238818077/myblog-api:3.3
     container_name: nodejs
     # build: 
     #   context: .  # 相对当前 docker-compose.yml 文件所在目录
@@ -22,7 +22,7 @@ services:
       - app-network
       
   webserver:
-    image: myblog:2.4
+    image: lm18238818077/myblog:2.3
     container_name: webserver
     build: 
       context: ./
@@ -36,7 +36,7 @@ services:
       - app-network
   
   mysql:
-    image: mysql:5.7
+    image: lm18238818077/mysql-sql:1.2
     container_name: mysql
     restart: unless-stopped
     environment:
