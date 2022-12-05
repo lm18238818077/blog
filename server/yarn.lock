@@ -566,9 +566,9 @@ debug@^4.1.1:
     ms "^2.1.1"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npm.taobao.org/decode-uri-component/download/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@~1.0.1:
   version "1.0.1"
@@ -1365,6 +1365,14 @@ koa-is-json@^1.0.0:
   resolved "https://registry.npm.taobao.org/koa-is-json/download/koa-is-json-1.0.0.tgz#273c07edcdcb8df6a2c1ab7d59ee76491451ec14"
   integrity sha1-JzwH7c3Ljfaiwat9We52SRRR7BQ=
 
+koa-json-error@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/koa-json-error/-/koa-json-error-3.1.2.tgz#acad750c6739cb12cc4ea6c25f224d59b765abfe"
+  integrity sha512-nqfNwD4W+hYaJijFl+6qNSQJHbTS4vp+gXTdXl5U8YK2PVNzCF0HnLZwyKHaMeBebhanAgmfheQv96wLDjLRxg==
+  dependencies:
+    lodash.compact "^3.0.1"
+    lodash.curry "^4.1.1"
+
 koa-logger@^3.2.1:
   version "3.2.1"
   resolved "https://registry.npm.taobao.org/koa-logger/download/koa-logger-3.2.1.tgz?cache=0&sync_timestamp=1563332734179&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fkoa-logger%2Fdownload%2Fkoa-logger-3.2.1.tgz#ab9db879526db3837cc9ce4fd983c025b1689f22"
@@ -1445,6 +1453,16 @@ lazystream@^1.0.0:
   integrity sha1-9plf4PggOS9hOWvolGJAe7dxaOQ=
   dependencies:
     readable-stream "^2.0.5"
+
+lodash.compact@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/lodash.compact/-/lodash.compact-3.0.1.tgz#540ce3837745975807471e16b4a2ba21e7256ca5"
+  integrity sha512-2ozeiPi+5eBXW1CLtzjk8XQFhQOEMwwfxblqeq6EGyTxZJ1bPATqilY0e6g2SLQpP4KuMeuioBhEnWz5Pr7ICQ==
+
+lodash.curry@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmmirror.com/lodash.curry/-/lodash.curry-4.1.1.tgz#248e36072ede906501d75966200a86dab8b23170"
+  integrity sha512-/u14pXGviLaweY5JI0IUzgzF2J6Ne8INyzAZjImcryjgkZ+ebruBxy2/JaOOkTqScddcYtakjhSaeemV8lR0tA==
 
 lodash.defaults@^4.2.0:
   version "4.2.0"
